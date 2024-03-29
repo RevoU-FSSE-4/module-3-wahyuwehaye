@@ -12,6 +12,30 @@ body {
   text-align: center;
 }
 
+.add-task {
+  margin-bottom: 20px;
+}
+
+.add-task input[type="text"] {
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-task button {
+  padding: 8px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-task button:hover {
+  background-color: #45a049;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -28,15 +52,13 @@ li {
   align-items: center;
 }
 
-input[type="text"] {
-  padding: 8px;
-  margin-right: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.completed {
+  text-decoration: line-through;
 }
 
-button {
-  padding: 8px;
+button.complete-btn,
+button.remove-btn {
+  padding: 6px 10px;
   border: none;
   background-color: #4caf50;
   color: #fff;
@@ -44,6 +66,7 @@ button {
   border-radius: 4px;
 }
 
-button:hover {
+button.complete-btn:hover,
+button.remove-btn:hover {
   background-color: #45a049;
 }
